@@ -1,0 +1,98 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xml:lang="en-US"
+	lang="en-US">
+<head profile="http://www.w3.org/2005/10/profile">
+<link
+	rel="icon"
+	type="image/png"
+	href="/images/favicon.png" />
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Team 2259 - LabVIEW Finish VI Guide</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+    <h1>Team 2259</h1>
+			<p>The Quarter Twenties</p>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+		<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://dosomethingreal.com/">CEC</a></li>
+            <li><a href="Tutorials.html">Tutorials</a></li>
+            <li><a href="Safety.html">Safety</a></li>
+            <li><a href="Art.html">Art</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+        <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+				  <div class="post">
+						<div class="post">
+						  <h2 class="title">Finish VI Template Appearance</h2>
+						  <div class="entry">
+						    <p><a href="FRCimages/LabVIEW_Finish1.png"><img src="FRCimages/LabVIEW_Finish1.png" width="143" height="143" alt="" class="alignleft border" /></a>When first opening the Finish VI and enter it's block diagram, it should appear to look something like the picture to the left. The Finish VI is the file in charge of deactiviating the robot and all of it's related devices. As seen in the picture, the way the robot deactivated is by closing all motors, devices, references, and save data and then stopping all loops inside other VIs. The way this is done is by simply having a two frame flat sequence structure. The first frame handles all deactivations, and the second stops all loops.</p>
+</div>
+					  </div>
+					  <div class="post">
+						  <h2 class="title">Extending Finish.VI</h2>
+						  <div class="entry">
+						    <p><a href="FRCimages/LabVIEW_Finish2.png"><img src="FRCimages/LabVIEW_Finish2.png" width="143" height="143" alt="" class="alignleft border" /></a>Add any motor, relay, camera, joystick, or other devices connected to robot into the first frame. As seen in the screenshot, our team added all of our devices into the flat sequence. Notice that we originally intended to use relays for specific motors, as compared to standard motors, there is only a slight different in LabVIEW programming when call relays, just use the appropriate objects found inside the WPI library and you'll do fine.</p>
+						  </div>
+					  </div>
+					  <!-- begin htmlcommentbox.com -->
+							<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+							<script type="text/javascript" language="javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={  };} (function(){s=document.createElement("script");s.setAttribute("type","text/javascript");s.setAttribute("src", "http://www.htmlcommentbox.com/jread?page="+escape((window.hcb_user && hcb_user.PAGE)||(""+window.location)).replace("+","%2B")+"&opts=470&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+					  <!-- end htmlcommentbox.com -->
+				  </div>
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<h2>Table of Contents:</h2>
+                            <ul>
+							<li><a href="LabView.html">Introductions and FAQ</a></li>
+                            <li><a href="Setup.html">Updating and Setup</a></li>
+                            <li><a href="Basics.html">Basics and Understanding</a></li>
+                            <li><a href="Begin.html">Begin VI</a></li>
+                            <li><a href="Autonomous.html">Autonomous VI</a></li>
+                            <li><a href="TeleOp.html">TeleOp VI</a></li>
+                            <li><a href="Disable.html">Disable VI</a></li>
+                            <li class="current_page_item"><a href="Finish.html">Finish VI</a></li>
+                            <li><a href="Build.html">Build and Run Project</a></li>
+                         	</ul>
+						</li>
+						<li> </li>
+					</ul>
+</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Copyright (c) 2011-2012 Team2259.org. All rights reserved.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xml:lang="en-US"
+	lang="en-US">
+<head profile="http://www.w3.org/2005/10/profile">
+<link
+	rel="icon"
+	type="image/png"
+	href="/images/favicon.png" />
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Team 2259 - LabVIEW Finish VI Guide</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+    <h1>Team 2259</h1>
+			<p>The Quarter Twenties</p>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+		<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://dosomethingreal.com/">CEC</a></li>
+            <li><a href="Tutorials.html">Tutorials</a></li>
+            <li><a href="Safety.html">Safety</a></li>
+            <li><a href="Art.html">Art</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+        <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content">
+				  <div class="post">
+						<div class="post">
+						  <h2 class="title">Building</h2>
+						  <div class="entry">
+						    <p><a href="FRCimages/LabVIEW_Build1.png"><img src="FRCimages/LabVIEW_Build1.png" width="143" height="143" alt="" class="alignleft border" /></a>When you are complete with your LabVIEW project, you will be finally be able to run your program into the robot, but to run the project you have to build it into a single executable format. To do this, simply right click the Boot-Up Deployment file and click Build (as shown in the picture.</p>
+						    <p><a href="FRCimages/LabVIEW_Build2.png"><img src="FRCimages/LabVIEW_Build2.png" width="143" height="143" alt="" class="alignleft border" /></a>If your project has any errors or bugs, you will be shown a window stating that there is an issue within one of VI files. It will display which file has the error and what the issue is within that file. Otherwise, LabVIEW will display a window stating that the build was complete and successful (as shown in the picture to the left).</p>
+                          </div>
+					  </div>
+					  <div class="post">
+						  <h2 class="title">Run at Startup</h2>
+						  <div class="entry">
+						    <p><a href="FRCimages/LabVIEW_Run1.png"><img src="FRCimages/LabVIEW_Run1.png" width="143" height="143" alt="" class="alignleft border" /></a>Once LabVIEW is done building the executable project, you must deploy your project to your robot. Note that you MUST have the computer connected to the robots cRIO to run the code, this can be done bother wirelessly or via tethered connections. There are two methods to do this: You can have the project run on start-up, which saves you the time from building and running it again when you reactivate your robot, oryou can simply deploy it once and have the project constantly run while the computer and the robot is activated. Each method has it's various uses. Running on start-up is commonly used when you finalized your LabVIEW project for the FRC tournament (since it write a true executable project as oppose to a temporary one), while deploying it once is commonly used to test you code a single time and  used for debugging and refining your project. As shown in the picture, you run the project the same way you build it.</p>
+						    <p><a href="FRCimages/LabVIEW_Run2.png"><img src="FRCimages/LabVIEW_Run2.png" width="143" height="143" alt="" class="alignleft border" /></a>If you've ran your project more than once, you will be displayed this message. This means that LabVIEW will close and overwrite these VIs. Simply click OK and continue running your project. This window will only appear if you did not unset the code at start-up and tried to recompile it at start-up.						    </p>
+						    <p><a href="FRCimages/LabVIEW_Run3.png"><img src="FRCimages/LabVIEW_Run3.png" width="143" height="143" alt="" class="alignleft border" /></a> Once done, you will be promted to reboot your robot and its cRIO, just click yes and wait until it's done rebooting.</p>
+						    <p>To test out your project, enter the FRC Driver Station program and deploy the robot. Be sure to have robot communication, built code, and connected joysticks.</p>
+						  </div>
+					  </div>
+					  <!-- begin htmlcommentbox.com -->
+							<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+							<script type="text/javascript" language="javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={  };} (function(){s=document.createElement("script");s.setAttribute("type","text/javascript");s.setAttribute("src", "http://www.htmlcommentbox.com/jread?page="+escape((window.hcb_user && hcb_user.PAGE)||(""+window.location)).replace("+","%2B")+"&opts=470&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+					  <!-- end htmlcommentbox.com -->
+				  </div>
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<h2>Table of Contents:</h2>
+                            <ul>
+							<li><a href="LabView.html">Introductions and FAQ</a></li>
+                            <li><a href="Setup.html">Updating and Setup</a></li>
+                            <li><a href="Basics.html">Basics and Understanding</a></li>
+                            <li><a href="Begin.html">Begin VI</a></li>
+                            <li><a href="Autonomous.html">Autonomous VI</a></li>
+                            <li><a href="TeleOp.html">TeleOp VI</a></li>
+                            <li><a href="Disable.html">Disable VI</a></li>
+                            <li><a href="Finish.html">Finish VI</a></li>
+                            <li class="current_page_item"><a href="Build.html">Build and Run Project</a></li>
+                         	</ul>
+						</li>
+						<li> </li>
+					</ul>
+</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Copyright (c) 2011-2012 Team2259.org. All rights reserved.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
